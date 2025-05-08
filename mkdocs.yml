@@ -1,0 +1,57 @@
+site_name: Rust 编程教程
+site_description: 全面深入的 Rust 编程语言学习指南
+site_author: Rust 教程团队
+repo_url: https://github.com/yourusername/your-repo-name
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.share
+  palette:
+    primary: indigo
+    accent: indigo
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+nav:
+  - 首页: index.md
+  - 章节:
+      - 第1章 - Rust语言初探: "第1章-Rust语言初探.md"
+      - 第2章 - 基本语法与数据类型: "第2章-基本语法与数据类型.md"
+      - 第3章 - 所有权系统: "第3章-所有权系统.md"
+      - 第4章 - 结构化数据: "第4章-结构化数据.md"
+      - 第5章 - 模块系统与包管理: "第5章-模块系统与包管理.md"
+      - 第6章 - 集合类型: "第6章-集合类型.md"
+      - 第7章 - 错误处理: "第7章-错误处理.md"
+      - 第8章 - 泛型与多态: "第8章-泛型与多态.md"
+      - 第9章 - 生命周期: "第9章-生命周期.md"
+      - 第10章 - 测试与质量保证: "第10章-测试与质量保证.md"
+      - 第11章 - 函数式编程特性: "第11章-函数式编程特性.md"
+      - 第12章 - 智能指针: "第12章-智能指针.md"
+      - 第13章 - 并发编程: "第13章-并发编程.md"
+      - 第14章 - 异步编程: "第14章-异步编程.md"
+      - 第15章 - 宏编程: "第15章-宏编程.md"
+      - 第16章 - API开发实战: "第16章-API开发实战.md"
+      - 第17章 - 命令行工具开发: "第17章-命令行工具开发.md"
+      - 第18章 - 嵌入式系统与Rust: "第18章-嵌入式系统与Rust.md"
+      - 第19章 - Web Assembly与Rust: "第19章-Web Assembly与Rust.md"
+      - 第20章 - 生产环境最佳实践: "第20章 - 生产环境最佳实践.md"
+  - 参考资料: reference.md
